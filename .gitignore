@@ -1,6 +1,11 @@
 # Created by .ignore support plugin (hsz.mobi)
+
+build
+classes
+lib
+
 ### Java template
-*.class
+/target/
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/

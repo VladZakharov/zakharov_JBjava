@@ -22,8 +22,8 @@ public class CalculatorServlet extends HttpServlet {
     }
 
     private void process(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println(req.getParameter("result"));
-        System.out.println(Calculator.solve(req.getParameter("result")));
+//        System.out.println(req.getParameter("result"));
+//        System.out.println(Calculator.solve(req.getParameter("result")));
         req.setAttribute("result", Calculator.solve(req.getParameter("result")));
         req.getRequestDispatcher("calc.jsp").forward(req, resp);
     }
